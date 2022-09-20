@@ -1,0 +1,3 @@
+[submodule "extern/terminal"]
+	path = extern/terminal
+	url = https://github.com/NilEis/C-Terminal.git
