@@ -1,8 +1,9 @@
 cmake_minimum_required(VERSION 3.0.0)
 project(c-logger VERSION 0.1.0 LANGUAGES C)
 find_package(Doxygen)
-
-add_subdirectory(extern/terminal)
+if (NOT TARGET c_terminal)
+    add_subdirectory(extern/terminal)
+endif()
 
 add_library(c_logger src/main.c)
 add_library(c_logger_static STATIC src/main.c)
