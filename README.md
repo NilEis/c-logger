@@ -1,3 +1,3 @@
 # C-logger
 - [x] Logging
-- [ ] Documentation
+- [x] Documentation
